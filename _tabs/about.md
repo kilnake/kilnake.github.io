@@ -2,16 +2,13 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+title: Resume
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> Ravi Kilnake is an experienced and certified IT Technician with a background in support and operations. Skilled in Azure and hybrid administration. Collaborative and flexible team leader with excellent communication skills.
 {: .prompt-tip }
 
-
-> Experienced and Certified IT Technician with a background in support and operations. Skilled in Azure and hybrid administration. Collaborative and flexible team leader with excellent communication skills.
-{: .prompt-info }
-
-### Experience
+# Experience
 
 ## IT Technician (Support/Operations) | IXX | Dec 2022 - Jun 2023
 
@@ -49,7 +46,7 @@ order: 4
     • APNIC IPv6 Enterprise - October 2023
     • APNIC IPv6 Fundamentals - July 2023
     • Microsoft Security, Identity and Access Administrator Associate - December 2023
-    • Microsoft Security, Compliance & Identity Fundamentals -     February 2022
+    • Microsoft Security, Compliance & Identity Fundamentals - February 2022
     • Microsoft 365 Fundamentals - February 2022
     • Microsoft Azure Fundamentals - January 2022
     • Cisco IT Essential - October 2021

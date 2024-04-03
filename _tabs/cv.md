@@ -1,3 +1,9 @@
+---
+layout: cv
+icon: fas fa-cv
+order: 5
+---
+
 ### Experienced and Certified IT Technician with a background in support and operations. Skilled in Azure and hybrid administration. Collaborative and flexible team leader with excellent communication skills.
 
 ### Experience

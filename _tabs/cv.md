@@ -1,7 +1,8 @@
 ---
-layout: cv
+layout: page
 icon: fas fa-cv
 order: 5
+permalink: /cv
 ---
 <div class="container">
 

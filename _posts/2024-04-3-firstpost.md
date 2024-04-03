@@ -7,10 +7,22 @@ tags: [github,documentation]
 
 # Saving documents with Github and Gitlab.
 
-## Step 1: Installing static website generator Jekyll with Chirpy theme
+## Step 1: Installing VS codium and static website generator Jekyll with Chirpy theme
+
 
 ```bash
-sudo apt update && sudo apt upgrade -y
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main
+
+sudo apt update && sudo apt install codium && sudo apt upgrade -y
+```
+
+```bash
 sudo apt install ruby-full build-essential zlib1g-dev git
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc

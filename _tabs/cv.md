@@ -3,25 +3,29 @@ layout: cv
 icon: fas fa-cv
 order: 5
 ---
+<div class="container">
 
-  Ravi Kilnake - Curriculum Vitae body { font-family: 'Liberation Mono', monospace; } .container { max-width: 800px; /\* Adjust the max-width as needed \*/ margin: 0 auto; /\* This centers the container horizontally \*/ padding: 0 50px; /\* Add padding to prevent content from touching the edges \*/ min-height:100%; position: relative; background-color:#f9f9f9; } footer { position: relative; bottom: 0; right: 0; border-top: 1px solid #ccc; width: 100%; text-align: right; /\* Align content to the right \*/ } button { background-color: #555; /\* Dark button background color \*/ color: #fff; /\* Light text color for buttons \*/ border: none; padding: 10px 20px; cursor: pointer; } /\* Move the button to the right \*/ .language-switch { position: absolute; top: 20px; /\* Adjust vertical position as needed \*/ right: 20px; /\* Adjust horizontal position as needed \*/ } function toggleLanguage() { var currentUrl = window.location.href; if (currentUrl.includes("cven.html")) { window.location.href = 'cvse.html'; } else { window.location.href = 'cven.html'; } }
+<header>
 
-Ravi Kilnake
-============
+# Ravi Kilnake
 
-Email: ravi\_kilnake@hotmail.com
+Email: ravi_kilnake@hotmail.com
 
 LinkedIn: [linkedin.com/in/kilnake](https://linkedin.com/in/kilnake)
 
-Switch Language
+<button class="language-switch" onclick="toggleLanguage()">Switch Language</button></header>
 
-About Me
---------
+<section id="about">
+
+## About Me
 
 Experienced and Certified IT Technician with a background in support and operations. Skilled in Microsoft/Azure and network administration. Adept at resolving issues through telephone, email, and remote access tools. Collaborative and flexible team player with excellent communication skills.
 
-Experience
-----------
+</section>
+
+<section id="experience">
+
+## Experience
 
 ### IT Technician (Support/Operations) | IXX | Dec 2022 - Jun 2023
 
@@ -51,8 +55,11 @@ Experience
 *   Managed windows 10, 11, Mac, Debian, Ubuntu, Rhel, Docker Containers.
 *   Managed Fortigate Firewall Inbound rules, VPN, MFA.
 
-Certifications
---------------
+</section>
+
+<section id="certifications">
+
+## Certifications
 
 *   APNIC IPv6 Enterprise – October 2023
 *   APNIC IPv6 Fundamentals - July 2023
@@ -64,16 +71,22 @@ Certifications
 *   Office 365 - December 2021
 *   Windows Server 2019 - December 2021
 
-Education
----------
+</section>
+
+<section id="education">
+
+## Education
 
 *   IT Technician | Lexicon AB | Sep 2021 - Feb 2022
 *   Svenska som Andra Språk | Hermods Höganäs | Jan 2021 - Jul 2021
 *   Svenska för Invandrare kurs C+D | Hermods Höganäs | Jan 2020 - Dec 2020
 *   Bachelor of Journalism & Mass Communication | Jagannath International Management School | 2011 - 2014
 
-Professional Skills
--------------------
+</section>
+
+<section id="skills">
+
+## Professional Skills
 
 *   Azure/Microsoft 365
 *   Active Directory/Azure Active Directory/Entra
@@ -86,11 +99,22 @@ Professional Skills
 *   Customer Training/Collaboration
 *   Documentation
 
-Languages
----------
+</section>
+
+<section id="languages">
+
+## Languages
 
 *   Swedish
 *   English
 *   Hindi
 
+</section>
+
+<footer>
+
 © 2024 Ravi Kilnake
+
+</footer>
+
+</div>

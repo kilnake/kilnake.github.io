@@ -32,7 +32,7 @@ gem install jekyll bundler
 ```
 
 ## Step 2: Installing vscodium for editing and publishing directly via CI/CD pipelines
-> I installed VSCodium via flatpak but you can pick your poison. 
+> I installed VSCodium via apt but you can pick your poison. 
 {: .prompt-tip }
 #### Step 2.1: Within vscodium install Github Actions and Codeium AI
 

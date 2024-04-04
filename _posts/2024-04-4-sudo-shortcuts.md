@@ -24,4 +24,5 @@ alias up="sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y"
 source ~/.bashrc
 ```
 
-Now you can use "up" in terminal and enter your password for update - upgrade - autoremove your packages. 
+> Now you can use "up" in terminal and enter your password for update - upgrade - autoremove your packages. 
+{: .prompt-tip }

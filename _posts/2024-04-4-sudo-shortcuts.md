@@ -5,6 +5,8 @@ categories: [linux, alias]
 tags: [sudo,alias,linux,update,upgrade,autoremove]
 ---
 
+![bash](https://media.geeksforgeeks.org/wp-content/uploads/banner-1-1.png)
+
 An alias is essentially a way to create a custom shorthand for a command or a series of commands.
 
 In package management with apt, you typically don't create aliases for individual apt commands like update, upgrade, or autoremove. Instead, you can create an alias for the entire sequence of commands you want to run together.

@@ -38,11 +38,12 @@ social:
   email: ravi_kilnake@hotmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    # - https://twitter.com/username # change to your twitter homepage
+    - https://www.linkedin.com/in/kilnake
     - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+   
 
 google_site_verification: # fill in to your verification string
 
@@ -82,7 +83,7 @@ avatar: https://gravatar.com/userimage/248230796/18f3f77c3e20dd5ab7d3abb6af786a9
 # It can be overridden by a customized `page.image` in front matter.
 social_preview_image: # string, local or CORS resources
 
-# boolean type, the global switch for TOC in posts.
+# boolean type, the global switch for TOC in posts.(Table of Content)
 toc: true
 
 comments:

@@ -5,7 +5,7 @@ categories: [linux, alias]
 tags: [sudo,alias,linux,update,upgrade,autoremove]
 ---
 
-![bash](https://media.geeksforgeeks.org/wp-content/uploads/banner-1-1.png)
+![bash](https://miro.medium.com/v2/resize:fit:640/format:webp/1*4v0BdcsKp4dYl-58RHLnVw.jpeg)
 
 An alias is essentially a way to create a custom shorthand for a command or a series of commands.
 

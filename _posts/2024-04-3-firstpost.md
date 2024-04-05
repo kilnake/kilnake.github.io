@@ -5,6 +5,8 @@ categories: [homelab, website, documentation]
 tags: [github,documentation]
 ---
 
+![gitgit](https://i.imgur.com/zNBkzj1.png)
+
 # Saving documents with Github and Gitlab.
 
 ## Step 1: Installing VS codium and static website generator Jekyll with Chirpy theme

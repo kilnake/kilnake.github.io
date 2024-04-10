@@ -56,7 +56,7 @@ title: Resume
 
 ## Education
 
-- IT Technician | :--- Lexicon AB ---: | Sep 2021 - Feb 2022
+- IT Technician | Lexicon AB | Sep 2021 - Feb 2022
 - Svenska som Andra Språk | Hermods Höganäs | Jan 2021 - Jul 2021
 - Svenska för Invandrare kurs C+D | Hermods Höganäs | Jan 2020 - 	Dec 2020
 - Bachelor of Journalism & Mass Communication | Jagannath 	International Management School | 2011 - 2014

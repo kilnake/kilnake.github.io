@@ -1,52 +1,21 @@
 ---
-title: Arr for the Media
-date: 2024-04-03 20:01 +500
-categories: [homelab, media, arr]
-tags: [sonarr,prowlarr,flaresolverr,jellyfin,transmission,filebrowser]
+title: Own Arr Media
+date: 2024-04-12 11:20 +500
+categories: [homelab, own, arr]
+tags: [homarr,sonarr,prowlarr,flaresolverr,jellyfin,transmission,filebrowser]
 ---
 
-![Arrrrr](https://www.sparklebox.co.uk/wp-content/uploads/1-9220.jpg){: width="972" height="589" .w-50 .right}
+## New Setup
 
-This is yaml file for installing sonarr, radarr, lidarr, homarr, jellyseerr prowlarr, flaresolverr, jellyfin, watchtower, transmission and filebrowser using alpine linux and docker compose. 
-
-## Copy docker script mentioned in the script
-
-It is using `https://tteck.github.io/Proxmox/` starter for container creation. The Guy who made did an amazing work.
-
-After this Go inside the container you created and login with root and whatever password you saved while installation. 
-
-> After successful login check IP address and keep a note of it or if you have DNS configured you can use the hostname of the machine. 
-```bash
-ip a
 ```
-{: .prompt-info }
-
-## Lets create folders first 
-
-```bash
 mkdir -p /data/media/tv /data/media/music /data/media/movies /data/torrents/tv /data/torrents/music /data/torrents/movies arr
-```
-> How to remove folder and all its content if you messed up creating folder or wanted to use custom folder --edit accordingly.
-```bash
-rm -r /data
-```
-{: .prompt-danger }
-
-## Permissions
-This you can keep as 775 or 777. 
-```bash
 chown -R $USER:$USER /data
 chmod -R 777 /data
-```
-## Creation
-
-Now go into "arr" folder and create a docker-compose.yml file.
-
-```bash
 cd arr
 nano docker-compose.yml
 ```
-Paste this content into docker-compose.yml and press --ctrl+x-- and press --Enter-- to save it.
+
+## The yaml ARR
 
 ```yaml
 ---
@@ -224,26 +193,20 @@ services:
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_POLL_INTERVAL=604800
 ```
-## Execution
-> docker compose up -d
-{: .prompt-tip }
 
-Now let it rip and download everything and then go to your ip address and start configuring the services on Homarr dashboard. 
+```bash
+ip a
+```
+## Ports
 
-> filebrowser = IP:8080
-
-> flaresolverr = IP:8191
-
-> jellyseerr = IP:5055
-
-> jellyfin = IP:8096
-
-> prowlarr = IP:9696
-
-> lidarr = IP:8686
-
-> radarr = IP:7878
-
-> sonarr = IP:8989
-
-> transmission = IP:9091
+* Homarr = IP:80
+* Sonarr = IP:8989
+* Radarr = IP:7878
+* Lidarr = IP:8686
+* Prowlarr = IP:9696
+* Jellyseerr = IP:5055
+* Flaresolverr = IP:8191
+* Jellyfin = IP:8096
+* Transmission = IP:9091
+* YoutubeDownload = IP:8998
+* FileBrowser = IP:8080

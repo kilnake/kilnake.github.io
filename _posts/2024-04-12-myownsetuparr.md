@@ -7,6 +7,13 @@ tags: [homarr,sonarr,prowlarr,flaresolverr,jellyfin,transmission,filebrowser]
 
 ## New Setup
 
+```bash
+ip a
+```
+Note down local/internal IP address.
+
+## Copy below to do magic
+
 ```
 mkdir -p /data/media/tv /data/media/music /data/media/movies /data/torrents/tv /data/torrents/music /data/torrents/movies arr
 chown -R $USER:$USER /data
@@ -194,9 +201,6 @@ services:
       - WATCHTOWER_POLL_INTERVAL=604800
 ```
 
-```bash
-ip a
-```
 ## Ports
 
 * Homarr = IP:80

@@ -21,6 +21,8 @@ chmod -R 777 /data
 cd arr
 nano docker-compose.yml
 ```
+> Now Paste the yaml file below in nano (docker-compose.yml) and save it by **ctrl+x** **Y** **Press Enter**
+{: .prompt-tip }
 
 ## The yaml ARR
 
@@ -200,6 +202,13 @@ services:
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_POLL_INTERVAL=604800
 ```
+
+## Run it 
+
+```bash
+docker compose up -d
+```
+After it is done just go the local ip of the server and configure Homarr(homepage) with links to easily configure rest of the services and conbine them together
 
 ## Ports
 

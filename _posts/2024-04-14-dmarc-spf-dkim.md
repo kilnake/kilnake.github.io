@@ -1,11 +1,10 @@
 ---
 title: Bought domain name now what?
-date: 2024-04-14 15:42 +500
+date: 2024-04-14 15:48 +500
 categories: [domain, spf, dmarc, dkim]
 tags: [domain,spf,dmarc,dkim]
 ---
 
-# Bought domain name now what?
 
 If you just bought a new domain name do not forget to fix it's emails! 
 
@@ -28,9 +27,9 @@ type: TXT
 host or name: @ (if required)
 
 value: v=spf1 -all
-
+```
 If you check your record using nslookup or dig you should get a result like this:
-
+```
 yourdomain.example.com. TXT “v=spf1 -all”
 @ TXT “v=spf1 -all”
 yoursubdomain.yourdomain.example.com. TXT “v=spf1 -all”
@@ -45,7 +44,6 @@ host or name: _dmarc
 
 value: v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;fo=1;rua=mailto:dmarc-rua@dmarc.service.example.com,mailto:dmarc@yourdomain.example.com
 ```
-
 Replace dmarc@yourdomain.example.com with the email address that you want reports to be sent to.
 
 If you check your record using nslookup or dig you should get a result like this:
@@ -88,4 +86,4 @@ value: .
 > Note that some DNS providers do not support a null MX record, so do not worry if you cannot create this record.
 {: .prompt-info }
 
-Once you have made these changes you can check your domain is configured correctly in the <**https://mxtoolbox.com**>
+Once you have made these changes you can check your domain is configured correctly in the <https://mxtoolbox.com>

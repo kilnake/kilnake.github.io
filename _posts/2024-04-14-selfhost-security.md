@@ -5,7 +5,7 @@ categories: [selfhost, security]
 tags: [selfhost,security,cybersecurity]
 ---
 
-#Crash course on security for Self hosting
+# Crash course on security for Self hosting
 
 Here are the basic things you can do that will reduce a significant amount of the vulnerabilities you will see. I've got a number of other suggestions but these are some of the most critical.
 

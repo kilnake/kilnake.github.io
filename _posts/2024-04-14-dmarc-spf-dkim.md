@@ -1,6 +1,6 @@
 ---
 title: Bought domain name now what?
-date: 2024-04-14 10:48 +500
+date: 2024-04-14 15:42 +500
 categories: [domain, spf, dmarc, dkim]
 tags: [domain,spf,dmarc,dkim]
 ---

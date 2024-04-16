@@ -8,7 +8,10 @@ tags: [pihole,regex,adlists]
 > Simple copy and paste the adlists into your pihole or adguardhome or adblock or blocky instance.
 {: .prompt-info }
 
+
 ![vue](img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=header")
+
+
 ```
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts	
 https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt	
@@ -51,6 +54,7 @@ https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.tx
 
 > Regex blobs for your pihole or adguardhome or adblock or blocky instance.
 {: .prompt-info }
+
 
 ```
 ^(.+[-_.])??adse?rv(er?|ice)?s?[0-9]*[-.]
@@ -96,6 +100,7 @@ https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.tx
 (\.|^)wsdvs\.com$
 clarity.ms
 ```
+
 
 > This is curated for my home setup while being super practical and no un-necessary blocking.
 {: .prompt-tip }

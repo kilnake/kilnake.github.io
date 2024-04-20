@@ -1,5 +1,5 @@
 ---
-title: Selfhost secuirty checklist
+title: Selfhost security checklist
 date: 2024-04-14 13:48 +500
 categories: [selfhost, security]
 tags: [selfhost,security,cybersecurity]

@@ -15,7 +15,7 @@ nano /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
 
 3. Add **void ({    //** just before **Ext.Msg.show({**
    
-   ![like this](image.png))
+   ![like this](/assets/proxmoxnag.png))
 
 4. Press Ctrl+x and yes to save and exit.
 5. The restart the service or reboot to take effect

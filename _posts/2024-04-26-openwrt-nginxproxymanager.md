@@ -13,7 +13,7 @@ Firstly set up static ip address and put hostnames.
 
 ![Openwrt page](/assets/ip.png)
 
-#### Edit the local domain and ip address in the same format as highlighted
+#### Edit the local domain and ip address in the same format as yellow highlighted
 
 ![General addresses change](/assets/addresses.png)
 

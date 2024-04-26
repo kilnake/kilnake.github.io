@@ -5,7 +5,7 @@ categories: [openwrt, nginxproxymanager, pihole, unbound]
 tags: [openwrt,nginxproxymanager,pihole,unbound]
 ---
 
-#### Openwrt would be assigning local IP addresses and hostnames can be changed either via in openwrt, proxmox hostnames of specific container or vm.
+## Openwrt would be assigning local IP addresses and hostnames can be changed either via in openwrt, proxmox hostnames of specific container or vm.
 
 Firstly set up static ip address and put hostnames.
 

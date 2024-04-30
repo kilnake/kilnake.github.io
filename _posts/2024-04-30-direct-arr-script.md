@@ -1,30 +1,34 @@
 ---
-title: Entire Media Setup
-date: 2024-04-21 16:28 +500
-categories: [homelab, media]
-tags: [sonarr,radarr,lidarr,prowlarr,watcharr,jellyseerr,flaresolverr,jellyfin,navidrome,nginx,transmission,ytdl,firebrowser,homarr,watchtower]
+title: Scripted Media Setup
+date: 2024-04-30 16:44 +500
+categories: [homelab, mediascript]
+tags: [mediascript]
+pin: true
 ---
 
-## New Setup
+## Final script
 
 ```bash
-ip a
+bash -c "$(wget -qO - https://raw.githubusercontent.com/kilnake/proxmox/main/auto.sh)"
 ```
-Note down local/internal IP address.
 
-## Copy below to do magic
 
-```
+## This is content of the script
+
+```bash
+#!/bin/sh
+
 mkdir -p /data/media/tv /data/media/music /data/media/movies /data/torrents/tv /data/torrents/music /data/torrents/movies /arr
 chown -R $USER:$USER /data /arr
 chmod -R 777 /data /arr
 cd /arr
-nano docker-compose.yml
+wget -q -O docker-compose.yml https://raw.githubusercontent.com/kilnake/proxmox/main/docker-compose.yml
+docker compose up -d
+ip -4 address show dev eth0
 ```
-> Now Paste the yaml file below in nano (docker-compose.yml) and save it by **ctrl+x** and **Y** and **Press Enter**
-{: .prompt-tip }
 
-## YML & nginx.conf
+
+## Content of docker-compose.yml
 
 ```yaml
 ---
@@ -147,16 +151,16 @@ services:
       - ./navidrome:/config
       - ./navidrome/data:/data
       - /data/media/music:/data/media/music:ro
-  nginx:
-    container_name: nginxformedia
-    image: nginx:latest
-    ports:
-      - "9999:80"
-    volumes:
-      - ./nginxformedia:/config
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - /data/media:/data/media:ro
-    restart: unless-stopped
+#  nginx:
+#    container_name: nginxformedia
+#   image: nginx:latest
+#    ports:
+#      - "9999:80"
+#    volumes:
+#     - ./nginxformedia:/config
+#      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+#     - /data/media:/data/media:ro
+#   restart: unless-stopped
   transmission:
     container_name: transmission
     image: linuxserver/transmission:latest
@@ -237,51 +241,5 @@ services:
       - TZ=Europe/Stockholm
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_POLL_INTERVAL=604800
-```
-
-### Now make another file in the same folder where you will save docker-compose.yml file and name it nginx.conf.
-
-Name it **nginx.conf**
 
 ```
-events {}
-
-http {
-    include /etc/nginx/mime.types;
-
-    server {
-        listen 80 default_server;
-        server_name localhost;
-
-        root /data/media;
-       # index index.html index.htm;
-
-        location / {
-            autoindex on;
-        }
-    }
-}
-
-```
-
-> docker compose up -d
-{: .prompt-tip }
-
-After it is done just go the local ip of the server and configure Homarr(homepage) with links to easily configure rest of the services and conbine them together
-
-## Ports
-
-* Homarr = :80
-* Sonarr = :8989
-* Radarr = :7878
-* Lidarr = :8686
-* Prowlarr = :9696
-* Jellyseerr = :5055
-* Flaresolverr = :8191
-* Jellyfin = :8096
-* Transmission = :9091
-* YoutubeDownload = :8998
-* FileBrowser = :8080
-* Navidrome = :4533
-* Nginx = :9999
-* Watcharr = :3080

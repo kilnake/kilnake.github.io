@@ -28,7 +28,6 @@ nano docker-compose.yml
 
 ```yaml
 ---
-version: "3.2"
 services:
   sonarr:
     container_name: sonarr

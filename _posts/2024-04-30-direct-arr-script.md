@@ -32,7 +32,6 @@ ip -4 address show dev eth0
 
 ```yaml
 ---
-version: "3.2"
 services:
   sonarr:
     container_name: sonarr

@@ -41,6 +41,7 @@ Any time I’m having issues with my monitors not being detected, screens flashi
 There is an old package by MS for this extension "HEVC Video Extensions from Device Manufacturer".
 
 Paste this in your browser and it will open the MS Store promt to install it:
+
 <ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq>
 
 ## EasyJob

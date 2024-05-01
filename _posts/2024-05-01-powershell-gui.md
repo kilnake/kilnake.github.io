@@ -1,5 +1,5 @@
 ---
-title: Powershell GUI
+title: Powershell
 date: 2024-05-01 13:44 +500
 categories: [windows, powershell]
 tags: [powershell]

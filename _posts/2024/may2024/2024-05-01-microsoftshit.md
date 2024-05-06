@@ -3,6 +3,7 @@ title: Windows Sysadmin stuff
 date: 2024-05-01 13:44 +500
 categories: [windows, powershell]
 tags: [powershell]
+pin: true
 ---
 
 # Generate powershell GUI directly 
@@ -54,4 +55,8 @@ Keep and execute your PowerShell and BAT scripts from one interface
 
 <https://fakeupdate.net/>
 
+
+## Corrupt a file- anyfile
+
+<https://corrupt-a-file.net/>
 

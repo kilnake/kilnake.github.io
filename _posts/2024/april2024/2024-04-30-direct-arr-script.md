@@ -6,8 +6,8 @@ tags: [mediascript]
 pin: true
 ---
 
-> ## Final script
-
+## Final script
+> 
 ```bash
 bash -c "$(wget -qO - https://raw.githubusercontent.com/kilnake/proxmox/main/auto.sh)"
 ```

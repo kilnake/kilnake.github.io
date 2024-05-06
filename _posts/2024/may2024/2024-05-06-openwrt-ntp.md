@@ -15,19 +15,23 @@ First see why you need to do that.
 
 > So lets see how to do that:
 
-#### Proper/Easy way: 
+## Proper/Easy way: 
 
 Find where NTP is set up in settings (Web UI) and point it to your router.
 
-#### Hacky way:
+## Hacky way:
 
 If the device uses DNS names of NTP servers, override that locally to resolve these names to your IP (LuCI/DHCP and DNS / Hostnames)
 
-#### Even more Hackyway:
+## Even more Hackyway:
 
 Catch all port 123/UDP traffic and redirect locally.
 
-### Reference 
+#### Reference 
 
 <https://forum.openwrt.org/t/ntp-problem-with-a-tp-link-camera/145401/2>
 
+
+# DNS override/hijacking
+
+<https://openwrt.org/docs/guide-user/firewall/fw3_configurations/intercept_dns>

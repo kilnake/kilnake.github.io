@@ -6,11 +6,12 @@ tags: [mediascript]
 pin: true
 ---
 
-## Final script
+> ## Final script
 
 ```bash
 bash -c "$(wget -qO - https://raw.githubusercontent.com/kilnake/proxmox/main/auto.sh)"
 ```
+{: .prompt-tip }
 
 
 ## This is content of the script

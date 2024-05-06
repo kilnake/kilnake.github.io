@@ -60,3 +60,10 @@ Keep and execute your PowerShell and BAT scripts from one interface
 
 <https://corrupt-a-file.net/>
 
+
+## Better way to wipe harddrive with reports
+
+This is based on old magnificient DBAN.
+
+<https://github.com/martijnvanbrummelen/nwipe>
+

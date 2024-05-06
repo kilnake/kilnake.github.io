@@ -18,6 +18,14 @@ Show-Command Get-Process
 > Show-Command <any cmdlet> (e.g. Show-Command Get-Process) will create an UI for any PowerShell command.
 {: .prompt-tip }
 
+
+## Fix all annoying windows issues at once.
+
+```cmd
+DISM /Online /Cleanup-Image /RestoreHealth
+SFC /scannow
+```
+
 ## This module shows user a toast message that their windows is on for long time and requries a hard-restart
 
 <https://github.com/Windos/BurntToast>

@@ -22,6 +22,30 @@ Show-Command Get-Process
 
 <https://github.com/Windos/BurntToast>
 
+
+## You can increase the FPS limit on RDP from 30hz to 60hz with a simple registry edit on the host machine
+
+To do configure the registry entry, follow these steps:
+
+    Start Registry Editor.
+    Go to the following registry subkey:
+    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations
+    On the Edit menu, select New, and then select DWORD(32-bit) Value.
+    Type DWMFRAMEINTERVAL, and then press Enter.
+    Right-click DWMFRAMEINTERVAL, and select Modify.
+    Select Decimal, type 15 in the Value data box, and then select OK. This sets the maximum frame rate to 60 FPS.
+    Exit Registry Editor, and then restart the computer.
+
+Frame rate mapping
+
+    15 decimal = 60 frames
+    10 decimal = 40 frames
+    5 decimal = 20 frames
+    1 decimal = 4 frames
+#### Reference
+
+<https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/frame-rate-limited-to-30-fps>
+
 ## Reset Windows Graphics Driver
 
 This key combo causes the Desktop Window Manager to recreate its graphics context and surface

@@ -21,7 +21,7 @@ Show-Command Get-Process
 
 ## Fix all annoying windows issues at once.
 
-```cmd
+```
 DISM /Online /Cleanup-Image /RestoreHealth
 SFC /scannow
 ```
@@ -76,6 +76,58 @@ There is an old package by MS for this extension "HEVC Video Extensions from Dev
 Paste this in your browser and it will open the MS Store promt to install it:
 
 <ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq>
+
+
+## BGinfo for easy locating the computers in the domain.
+
+<https://learn.microsoft.com/en-us/sysinternals/downloads/bginfo>
+
+#### Deploying BGInfo with Intune
+
+* Get BGInfo from Sysinternals
+* Run BGInfo, create your template, and save it as bginfo.bgi
+* Get IntuneWinAppUtil.exe from this GitHub repo
+* Package the scripts, template, and BGInfo
+* Add the package to Intune, and deploy it
+
+#### Creating the .intunewin package
+
+You’ll need an install/uninstall script, which are shown here. Dump these in a folder as install.ps1 and uninstall.ps1 along with your bginfo.bgi templace and BGInfo64.exe. Since this is for labbing, I won’t bother with signing or any of that stuff.
+
+***install.ps1***
+```powershell
+New-Item –ItemType Directory –Force –Path "C:\Program Files\BGInfo" | Out-Null 
+Copy-Item –Path "$PSScriptRoot\Bginfo64.exe" –Destination "C:\Program Files\BGInfo\BGInfo64.exe" 
+Copy-Item –Path "$PSScriptRoot\bginfo.bgi" –Destination "C:\Program Files\BGInfo\bginfo.bgi"
+$Shell = New-Object –ComObject ("WScript.Shell")
+$ShortCut = $Shell.CreateShortcut("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\BGInfo.lnk")
+$ShortCut.TargetPath="`"C:\Program Files\BGInfo\BGInfo64.exe`""
+
+$ShortCut.Arguments="`"C:\Program Files\BGInfo\bginfo.bgi`" /timer:0 /silent /nolicprompt"
+$ShortCut.IconLocation = "BGInfo64.exe, 0";
+$ShortCut.Save()
+```
+
+***uninstall.ps1***
+```powershell
+Remove-Item -Path "C:\Program Files\BGInfo" -Recurse -Force -Confirm:$false
+
+Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\BGInfo.lnk" -Force -Confirm:$false
+Return 0
+```
+
+The next step is to run intunewinutil.exe -c SOURCE -s bginfo64.exe -o DESTINATION -q. Once this is done, you’ll have a .intunewin file you can upload as a Win32 application.
+
+#### Creating the app in Intune
+
+In this deployment I just used the all-devices deployment group, but you can target it at any group you want. I’ve done this on my setup for the virtio-win driver MSI so that it only installs on machines with a quick device.deviceManufacturer -eq "QEMU" rule.
+
+<https://www.youtube.com/watch?v=BFyX8EyTPho>
+
+> Install command: 	powershell -ex bypass -file install.ps1
+> Uninstall command: 	powershell -ex bypass -file uninstall.ps1
+> Detection folder: 	C:\Program Files\BGInfo
+> Detection file: 	bginfo.bgi
 
 ## EasyJob
 

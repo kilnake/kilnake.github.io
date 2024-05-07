@@ -20,3 +20,15 @@ This is due to Stylometry and it's not new. It's been around for years and intel
 2. Disable javascript which will break most likely every site.
 3. Use Kloak <https://github.com/vmonaco/kloak#readme>
 4. The best one so far <https://addons.mozilla.org/en-US/firefox/addon/chameleon-ext/> This is convinient for a normal user.
+
+## If you want to be more scared look your digital footprint via osint frame work
+
+<https://osintframework.com/>
+
+## Remove yourself from public searches
+
+Although this is fairly US based, but worth a while as major companies are in USA
+
+<https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List>
+
+<https://support.google.com/websearch/troubleshooter/3111061?hl=en>

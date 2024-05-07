@@ -13,28 +13,49 @@ pin: true
 * **Insurance** - Medical, Life, Money back, Vehicle, House etc
 * ... If he had any term insurance, need to be claimed
 * **Govt** - EPF, NPS
-* **Office** - F&F
+* **Office** - F&F (F&F means full and final. That includes balance pay, arears, gratuity etc)
 * **Market** - Stocks , MF
 * **Will** - Probate the same
 *  **Transfer Ownership**
   - [ ] Email
-  - [ ] mobile
-  - [ ] landline
-  - [ ] laptop
-  - [ ] pc
-  - [ ] vehicles
-  - [ ] house
+  - [ ] Mobile
+  - [ ] Landline
+  - [ ] Laptop
+  - [ ] PC
+  - [ ] Vehicles
+  - [ ] House
+  - [ ] Transfer ownership of assets to heirs as per will or sucession 
 * **Connections**
-  - [ ] water
-  - [ ] electricity
-  - [ ] gas
-  - [ ] demat/stocks
-  - [ ] bank locker
+  - [ ] Water
+  - [ ] Electricity
+  - [ ] Gas
+  - [ ] Demat/Stocks
+  - [ ] Bank locker
 * **Certificates**
   - [ ] Death
-  - [ ] Succession/Legal heir
+  - [ ] Succession
+  - [ ] Will (if any)
+  - [ ] Legal Heir
+  - [ ] Probate of the will 
 * **Payables**
   - [ ] Loans, premiums, bills etc
   - [ ] Go through bank statements for last 2-3 years to understand where all money goes
   - [ ] Talk to CA for any TAX outstanding and closure
 * **Closure Policies**
+
+
+
+    `Confidential diary`
+
+    This will hold all important information
+
+  * ... Account info, cards, pins, passwords, emails, recovery codes etc.
+  * Keep the same in your safe/locker.
+
+
+
+> Where ever you need to submit photocopies ... always cross it in the middle and write out purpose . Example ( For LIC insurance only + date ). This is to prevent misuse of the photocopies for identify theft 
+{: .prompt-info }
+
+>  Keep original documents of House, Insurances, DL, Adhar, PAN, etc ... very safe. 
+{: .prompt-info }

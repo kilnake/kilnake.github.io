@@ -102,7 +102,6 @@ Copy-Item –Path "$PSScriptRoot\bginfo.bgi" –Destination "C:\Program Files\BG
 $Shell = New-Object –ComObject ("WScript.Shell")
 $ShortCut = $Shell.CreateShortcut("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\BGInfo.lnk")
 $ShortCut.TargetPath="`"C:\Program Files\BGInfo\BGInfo64.exe`""
-
 $ShortCut.Arguments="`"C:\Program Files\BGInfo\bginfo.bgi`" /timer:0 /silent /nolicprompt"
 $ShortCut.IconLocation = "BGInfo64.exe, 0";
 $ShortCut.Save()
@@ -111,14 +110,13 @@ $ShortCut.Save()
 ***uninstall.ps1***
 ```powershell
 Remove-Item -Path "C:\Program Files\BGInfo" -Recurse -Force -Confirm:$false
-
 Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\BGInfo.lnk" -Force -Confirm:$false
 Return 0
 ```
 
-The next step is to run *intunewinutil.exe -c SOURCE -s bginfo64.exe -o DESTINATION -q*. 
+The next step is to run **intunewinutil.exe -c SOURCE -s bginfo64.exe -o DESTINATION -q**. 
 
-Once this is done, you’ll have a *.intunewin* file you can upload as a Win32 application.
+Once this is done, you’ll have a **.intunewin** file you can upload as a Win32 application.
 
 #### Creating the app in Intune
 
@@ -126,13 +124,13 @@ In this deployment I just used the all-devices deployment group, but you can tar
 
 <https://www.youtube.com/watch?v=BFyX8EyTPho>
 
-> Install command: 	powershell -ex bypass -file install.ps1
+> Install command: 	**powershell -ex bypass -file install.ps1**
 
-> Uninstall command: 	powershell -ex bypass -file uninstall.ps1
+> Uninstall command: 	**powershell -ex bypass -file uninstall.ps1**
 
-> Detection folder: 	C:\Program Files\BGInfo
+> Detection folder: 	**C:\Program Files\BGInfo**
 
-> Detection file: 	bginfo.bgi
+> Detection file: 	**bginfo.bgi**
 
 
 

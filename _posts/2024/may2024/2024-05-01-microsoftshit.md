@@ -116,7 +116,9 @@ Remove-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\
 Return 0
 ```
 
-The next step is to run intunewinutil.exe -c SOURCE -s bginfo64.exe -o DESTINATION -q. Once this is done, you’ll have a .intunewin file you can upload as a Win32 application.
+The next step is to run *intunewinutil.exe -c SOURCE -s bginfo64.exe -o DESTINATION -q*. 
+
+Once this is done, you’ll have a *.intunewin* file you can upload as a Win32 application.
 
 #### Creating the app in Intune
 
@@ -125,9 +127,14 @@ In this deployment I just used the all-devices deployment group, but you can tar
 <https://www.youtube.com/watch?v=BFyX8EyTPho>
 
 > Install command: 	powershell -ex bypass -file install.ps1
+
 > Uninstall command: 	powershell -ex bypass -file uninstall.ps1
+
 > Detection folder: 	C:\Program Files\BGInfo
+
 > Detection file: 	bginfo.bgi
+
+
 
 ## EasyJob
 

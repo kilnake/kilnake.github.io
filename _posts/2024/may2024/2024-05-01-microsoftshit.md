@@ -156,3 +156,5 @@ This is based on old magnificient DBAN.
 
 <https://github.com/martijnvanbrummelen/nwipe>
 
+<https://github.com/PartialVolume/shredos.x86_64>
+

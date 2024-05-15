@@ -138,7 +138,7 @@ In this deployment I just used the all-devices deployment group, but you can tar
 
 ## Rock solid print management 3rd party tool
 
-<http://www.laptechnologies.com/Printers.exe> `This is very old tool but works flawless`
+`http://www.laptechnologies.com/Printers.exe` from <https://www.donationcoder.com/forum/index.php?topic=20903.0> `This is very old tool but works flawless`
 
 
 ## Email things that should be checked while setting up domain 

@@ -132,7 +132,19 @@ In this deployment I just used the all-devices deployment group, but you can tar
 
 > Detection file: 	**bginfo.bgi**
 
+## Commands for powershell for repetative tasks
 
+<https://cmd.ms/>
+
+## Rock solid print management 3rd party tool
+
+<http://www.laptechnologies.com/Printers.exe> `This is very old tool but works flawless`
+
+
+## Email things that should be checked while setting up domain 
+
+<https://dmarcian.com> and <https://www.learndmarc.com> as great tools. 
+<mxtoolbox.com> and <https://dnsdumpster.com> for dns 
 
 ## EasyJob
 

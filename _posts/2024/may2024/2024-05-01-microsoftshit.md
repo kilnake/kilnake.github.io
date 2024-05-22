@@ -69,6 +69,13 @@ Any time I’m having issues with my monitors not being detected, screens flashi
 
 <https://github.com/massgravel/Microsoft-Activation-Scripts>
 
+-   Right-click on the Windows start menu and select PowerShell or Terminal (Not CMD).
+-   Copy and paste the code below and press enter  
+`irm https://get.activated.win | iex`  
+-   You will see the activation options. Follow the on-screen instructions.
+-   That's all.
+
+
 ## HVEC driver windows
 
 There is an old package by MS for this extension "HEVC Video Extensions from Device Manufacturer".

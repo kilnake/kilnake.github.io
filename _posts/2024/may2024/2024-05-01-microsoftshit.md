@@ -75,6 +75,12 @@ Any time I’m having issues with my monitors not being detected, screens flashi
 -   You will see the activation options. Follow the on-screen instructions.
 -   That's all.
 
+## Free Imaging solution for windows depolyment
+
+<https://aka.ms/mdtdownload>
+<https://www.osdcloud.com/>
+<https://fogproject.org/> Open Source
+
 
 ## HVEC driver windows
 

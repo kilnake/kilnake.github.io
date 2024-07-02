@@ -26,6 +26,12 @@ DISM /Online /Cleanup-Image /RestoreHealth
 SFC /scannow
 ```
 
+## This (from the command shell) will disable Hibernation and turn off Fast Startup all in one.
+
+```
+powercfg -h off
+```
+
 ## This module shows user a toast message that their windows is on for long time and requries a hard-restart
 
 <https://github.com/Windos/BurntToast>

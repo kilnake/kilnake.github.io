@@ -81,4 +81,4 @@ while($true) {
 }
 ```
 
-That’s it for this one, please consider sharing and dropping a follow, more guides upcoming! Also consider following me on [LinkedIn](https://www.linkedin.com/in/dhruv-gera/) and [GitHub](http://github.com/Dhruvgera)!
+That’s it!

@@ -6,6 +6,10 @@ tags: [powershell]
 pin: true
 ---
 
+# Microsoft Admin consoles direct portal login
+
+<https://msportals.io/>
+
 # Generate powershell GUI directly 
 
 This is fantastic for those who are coming from bash environment like me to get familiar with powershell.

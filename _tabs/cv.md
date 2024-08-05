@@ -5,4 +5,4 @@ order: 4
 title: Resume/CV
 ---
 
-<iframe src="https://kilnake.pages.dev" width="800" height="3000"></iframe>
+<iframe src="https://kilnake.pages.dev" width="800" height="600"></iframe>

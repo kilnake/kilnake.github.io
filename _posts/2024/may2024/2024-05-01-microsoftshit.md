@@ -30,6 +30,12 @@ DISM /Online /Cleanup-Image /RestoreHealth
 SFC /scannow
 ```
 
+## Proper Restart
+
+```
+shutdown /r /f /t 0
+```
+
 ## This (from the command shell) will disable Hibernation and turn off Fast Startup all in one.
 
 ```

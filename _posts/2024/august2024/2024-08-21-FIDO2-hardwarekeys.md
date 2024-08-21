@@ -18,9 +18,22 @@ tags: [windows, hardwarekeys, fido2]
 
 - x1 at home x1 on their keychain x1 for the office x1 as a spare.
 
-3. Block Windows Hello For Business so they don't enroll Windows Hello For Business thinking they enrolled their Yubikey.
-4. Send out instructions to users on how to enroll their Yubikeys, give users a few days/weeks to enroll them
-5. Configure a conditional access policy to enforce Phish Resistant MFA and block all other forms of MFA.
+#### 3.
 
-> Also Android phones Yubikey NFC FIDO2 still doesn't work with M365. So hope you have iPhones(August 2024). {: .prompt-tip }
-> Do not fall back to Push MFA, TOTP or other methods that are not Phish Resistant. Remember the goal is Phish Resistent, no exceptions. Do it right and enforce them and do not give the option to fall back or use any other MFA methods. (Windows Hello For Business if configured properly or CBA is also acceptable) {: .prompt-warning }
+Block Windows Hello For Business so they don't enroll Windows Hello For Business thinking they enrolled their Yubikey.
+
+#### 4.
+
+Send out instructions to users on how to enroll their Yubikeys, give users a few days/weeks to enroll them
+
+#### 5.
+
+Configure a conditional access policy to enforce Phish Resistant MFA and block all other forms of MFA.
+
+<!-- prettier-ignore -->
+> Also Android phones Yubikey NFC FIDO2 still doesn't work with M365. So hope you have iPhones(August 2024).
+{: .prompt-tip }
+
+<!-- prettier-ignore -->
+> Do not fall back to Push MFA, TOTP or other methods that are not Phish Resistant. Remember the goal is Phish Resistent, no exceptions. Do it right and enforce them and do not give the option to fall back or use any other MFA methods. (Windows Hello For Business if configured properly or CBA is also acceptable)
+{: .prompt-warning }

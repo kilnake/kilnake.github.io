@@ -26,7 +26,7 @@ Focuses on testing DKIM, rDNS, and PTR records.
 CheckTLS: <https://www.checktls.com/TestReceiver?ASSURETLS>
 Validates mandatory TLS enforcement for email delivery.
 
-Mail-Tester: <https://www.mail-tester.com >
+Mail-Tester: <https://www.mail-tester.com>
 Analyzes HELO compliance and rDNS configuration.
 
 DANE Test: <https://dane.sys4.de>

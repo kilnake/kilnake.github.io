@@ -11,32 +11,32 @@ If you host your own email server, ensuring its security is critical. Regularly 
 
 ### Recommended Email Server Security Tests
 
-    MECSA - JRC: <https://mecsa.jrc.ec.europa.eu>
-    Great for testing StartTLS, X509 certificates, SPF, DKIM, DMARC, DANE, DNSSEC, and MTA-STS.
+MECSA - JRC: <https://mecsa.jrc.ec.europa.eu>
+Great for testing StartTLS, X509 certificates, SPF, DKIM, DMARC, DANE, DNSSEC, and MTA-STS.
 
-    Hardenize: <https://www.hardenize.com>
-    Excellent for checking rDNS, PTR records, and cipher suites.
+Hardenize: <https://www.hardenize.com>
+Excellent for checking rDNS, PTR records, and cipher suites.
 
-    Internet.nl: <https://internet.nl>
-    Useful for testing IPv6 support and DNSSEC configuration.
+Internet.nl: <https://internet.nl>
+Useful for testing IPv6 support and DNSSEC configuration.
 
-    NCSC Email Security Check: <https://checkcybersecurity.service.ncsc.gov.uk/email-security-check/form>
-    Focuses on testing DKIM, rDNS, and PTR records.
+NCSC Email Security Check: <https://checkcybersecurity.service.ncsc.gov.uk/email-security-check/form>
+Focuses on testing DKIM, rDNS, and PTR records.
 
-    CheckTLS: <https://www.checktls.com/TestReceiver?ASSURETLS>
-    Validates mandatory TLS enforcement for email delivery.
+CheckTLS: <https://www.checktls.com/TestReceiver?ASSURETLS>
+Validates mandatory TLS enforcement for email delivery.
 
-    Mail-Tester: <https://www.mail-tester.com >
-    Analyzes HELO compliance and rDNS configuration.
+Mail-Tester: <https://www.mail-tester.com >
+Analyzes HELO compliance and rDNS configuration.
 
-    DANE Test: <https://dane.sys4.de>
-    Verifies the correct implementation of DANE.
+DANE Test: <https://dane.sys4.de>
+Verifies the correct implementation of DANE.
 
 ### Strict RFC-compliant:
 
-    SPF, DKIM, DMARC: https://DMARCtester.com
+SPF, DKIM, DMARC: https://DMARCtester.com
 
-    SPF, DKIM, DMARC, MTA-STS, BIMI, MX: https://www.uriports.com/tools
+SPF, DKIM, DMARC, MTA-STS, BIMI, MX: https://www.uriports.com/tools
 
 ### Conclusion
 

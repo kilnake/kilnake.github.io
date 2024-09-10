@@ -32,6 +32,12 @@ If you host your own email server, ensuring its security is critical. Regularly 
     DANE Test: <https://dane.sys4.de>
     Verifies the correct implementation of DANE.
 
+### Strict RFC-compliant:
+
+    SPF, DKIM, DMARC: https://DMARCtester.com
+
+    SPF, DKIM, DMARC, MTA-STS, BIMI, MX: https://www.uriports.com/tools
+
 ### Conclusion
 
 Regularly using these tools can help you maintain a secure and reliable email server, providing peace of mind and a solid defense against potential threats.

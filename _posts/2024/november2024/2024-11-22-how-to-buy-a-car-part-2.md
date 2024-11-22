@@ -45,42 +45,43 @@ If you like the answers, schedule a test drive **in the daylight**. Request that
 8.  Check that the engine bay is completely DRY. Look for leaks or wet areas.
 9.  Check the transmission fluid dip stick.
 10. Check the brake fluid.
+11. Check below the mats.
 
-11. Inspect the coolant reservoir, which should show if coolant is low.
+12. Inspect the coolant reservoir, which should show if coolant is low.
 
-12. Get under the car and look for **any** leaks and/or rust.
+13. Get under the car and look for **any** leaks and/or rust.
 
-13. Test low beams (headlights)
+14. Test low beams (headlights)
 
-14. High beams (brights)
+15. High beams (brights)
 
-15. Blinkers (front and rear)
+16. Blinkers (front and rear)
 
-16. Brake lights
+17. Brake lights
 
-17. Reverse lights
+18. Reverse lights
 
-18. License plate lights
+19. License plate lights
 
-19. Engage the parking break.
+20. Engage the parking break.
 
-20. For each door: Open, get in, close it, test that the window rolls all the way up and down. Make sure it has a mat.
+21. For each door: Open, get in, close it, test that the window rolls all the way up and down. Make sure it has a mat.
 
-21. Open and inspect the hatch/trunk. Examine hydraulics if applicable.
+22. Open and inspect the hatch/trunk. Examine hydraulics if applicable.
 
-22. Roll all windows down from drivers seat, make sure they’re all down, then roll them all up. Sunroof if applicable.
+23. Roll all windows down from drivers seat, make sure they’re all down, then roll them all up. Sunroof if applicable.
 
-23. Honk the horn a few times.
+24. Honk the horn a few times.
 
-24. Run Wipers and spray wiper fluid.
+25. Run Wipers and spray wiper fluid.
 
-25. Slide the front seats forward and back.
+26. Slide the front seats forward and back.
 
-26. Turn the radio on, check the speakers.
+27. Turn the radio on, check the speakers.
 
-27. Test the Heater.
+28. Test the Heater.
 
-28. Test the AC.
+29. Test the AC.
 
 # Test drive
 

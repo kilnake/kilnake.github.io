@@ -10,14 +10,14 @@ tags: [itsupport]
 <!-- prettier-ignore -->
 > #### Types of IT Support: Summary
 
-1. Help Desk Support: First-line support for basic issues.
-2. Desktop Support: On-site support for desktop computers and peripherals.
-3. Network Support: Maintenance and troubleshooting of network infrastructure.
-4. Server Support: Management and troubleshooting of servers.
-5. Application Support: Support for software applications.
-6. Remote Support: Support provided remotely through phone, email, or chat.
-7. On-site Support: Support provided at the customer's location.
-   {: .prompt-tip }
+- Help Desk Support: First-line support for basic issues.
+- Desktop Support: On-site support for desktop computers and peripherals.
+- Network Support: Maintenance and troubleshooting of network infrastructure.
+- Server Support: Management and troubleshooting of servers.
+- Application Support: Support for software applications.
+- Remote Support: Support provided remotely through phone, email, or chat.
+- On-site Support: Support provided at the customer's location.
+  {: .prompt-tip }
 
 ## IT Support Roles:
 

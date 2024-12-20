@@ -3,16 +3,18 @@ title: Scripted Media Setup
 date: 2024-04-30 16:44 +500
 categories: [homelab, mediascript]
 tags: [mediascript]
-pin: true
+pin: false
 ---
 
 ## Final script
-> 
+
+>
+
 ```bash
 bash -c "$(wget -qO - https://raw.githubusercontent.com/kilnake/proxmox/main/auto.sh)"
 ```
-{: .prompt-tip }
 
+{: .prompt-tip }
 
 ## This is content of the script
 
@@ -27,7 +29,6 @@ wget -q -O docker-compose.yml https://raw.githubusercontent.com/kilnake/proxmox/
 docker compose up -d
 ip -4 address show dev eth0
 ```
-
 
 ## Content of docker-compose.yml
 
@@ -106,7 +107,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Stockholm 
+      - TZ=Europe/Stockholm
     volumes:
       - ./jellyseerr:/app/config
   flaresolverr:
@@ -151,16 +152,16 @@ services:
       - ./navidrome:/config
       - ./navidrome/data:/data
       - /data/media/music:/data/media/music:ro
-#  nginx:
-#    container_name: nginxformedia
-#   image: nginx:latest
-#    ports:
-#      - "9999:80"
-#    volumes:
-#     - ./nginxformedia:/config
-#      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-#     - /data/media:/data/media:ro
-#   restart: unless-stopped
+  #  nginx:
+  #    container_name: nginxformedia
+  #   image: nginx:latest
+  #    ports:
+  #      - "9999:80"
+  #    volumes:
+  #     - ./nginxformedia:/config
+  #      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  #     - /data/media:/data/media:ro
+  #   restart: unless-stopped
   transmission:
     container_name: transmission
     image: linuxserver/transmission:latest
@@ -177,30 +178,30 @@ services:
       - ./transmission:/config
       - /data/torrents:/data/torrents:rw
   ytdl_material:
-      environment: 
-          ytdl_mongodb_connection_string: 'mongodb://ytdl-mongo-db:27017'
-          ytdl_use_local_db: 'false'
-          write_ytdl_config: 'true'
-      restart: unless-stopped
-      depends_on:
-          - ytdl-mongo-db
-      volumes:
-          - ./ytdl/appdata:/app/appdata
-          - /data/media/ytdl/audio:/app/audio
-          - /data/media/ytdl/video:/app/video
-          - /data/media/ytdl/subscriptions:/app/subscriptions
-          - /data/media/ytdl/users:/app/users
-      ports:
-          - 8998:17442
-      image: tzahi12345/youtubedl-material:latest
+    environment:
+      ytdl_mongodb_connection_string: "mongodb://ytdl-mongo-db:27017"
+      ytdl_use_local_db: "false"
+      write_ytdl_config: "true"
+    restart: unless-stopped
+    depends_on:
+      - ytdl-mongo-db
+    volumes:
+      - ./ytdl/appdata:/app/appdata
+      - /data/media/ytdl/audio:/app/audio
+      - /data/media/ytdl/video:/app/video
+      - /data/media/ytdl/subscriptions:/app/subscriptions
+      - /data/media/ytdl/users:/app/users
+    ports:
+      - 8998:17442
+    image: tzahi12345/youtubedl-material:latest
   ytdl-mongo-db:
-      image: mongo:4
-      logging:
-          driver: none          
-      container_name: mongo-db
-      restart: unless-stopped
-      volumes:
-          - ./ytdl/db/:/data/db
+    image: mongo:4
+    logging:
+      driver: none
+    container_name: mongo-db
+    restart: unless-stopped
+    volumes:
+      - ./ytdl/db/:/data/db
   filebrowser:
     container_name: filebrowser
     image: filebrowser/filebrowser:latest
@@ -241,5 +242,4 @@ services:
       - TZ=Europe/Stockholm
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_POLL_INTERVAL=604800
-
 ```

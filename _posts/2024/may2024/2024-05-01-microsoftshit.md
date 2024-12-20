@@ -176,6 +176,7 @@ In this deployment I just used the all-devices deployment group, but you can tar
 ## Email things that should be checked while setting up domain
 
 <https://dmarcian.com> and <https://www.learndmarc.com> as great tools.
+
 <mxtoolbox.com> and <https://dnsdumpster.com> for dns
 
 ## EasyJob

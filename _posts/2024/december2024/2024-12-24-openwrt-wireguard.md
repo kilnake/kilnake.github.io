@@ -49,6 +49,4 @@ tags: [openwrt, wireguard]
 
 ![generate qr and select right ddns and endpoints](/assets/wireguard-openwrt/qr.png)
 
-## Save and Apply
-
-# Step - Save and Apply and Reboot
+## Save and Apply and Reboot

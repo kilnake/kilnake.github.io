@@ -15,8 +15,8 @@ platforms:
     link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
 
   - type: Whatsapp
-    icon: "fab fa-square-whatsapp"
-    link: "https://www.whatsapp.com/"
+    icon: "fab fa-whatsapp"
+    link: "whatsapp://send?title=TITLE&u=URL"
   - type: Telegram
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"

@@ -2,7 +2,8 @@
 title: Openwrt DDNS
 date: 2024-05-23 12:00 +500
 categories: [openwrt, ddns]
-tags: [openwrt,ddns]
+tags: [openwrt, ddns]
+image: /assets/thumbnails/ddns.png
 ---
 
 # Lets see how to configure ddns using freemyip.com
@@ -10,7 +11,6 @@ tags: [openwrt,ddns]
 Create a ddns entry using <https://freemyip.com/>
 
 And copy the link save it somewhere safe
-
 
 ## Login into openwrt and download ddns packages as below
 

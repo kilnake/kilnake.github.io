@@ -4,6 +4,7 @@ date: 2024-05-01 13:44 +500
 categories: [windows, powershell]
 tags: [powershell]
 pin: true
+image: /assets/thumbnails/microsoft.png
 ---
 
 # Microsoft Admin consoles direct portal login

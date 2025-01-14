@@ -1,12 +1,12 @@
 ---
 title: Bypass CGNAT using oracle VPS
 date: 2024-07-03 10:44 +500
-categories: [networking,oracle,cloud]
+categories: [networking, oracle, cloud]
 tags: [oracle]
+image: /assets/thumbnails/cgnat.png
 ---
 
-Bypass CG-NAT, get yourself a free Public IP! (Reverse SSH Tunnel)
-==================================================================
+# Bypass CG-NAT, get yourself a free Public IP! (Reverse SSH Tunnel)
 
 [![Dhruv Gera](https://miro.medium.com/v2/resize:fill:88:88/1*ecuLirIkinYH-hlKO4xQ2g.jpeg)](https://medium.com/?source=post_page-----c717d1000422--------------------------------)
 
@@ -14,13 +14,11 @@ Bypass CG-NAT, get yourself a free Public IP! (Reverse SSH Tunnel)
 
 All credits to Dhruv gera, very proud of you brother.
 
-
 Most of us today are plagued by CG-NAT, ruining our dreams of self hosting anything which can be accessed over the internet. And since sadly most of us are still on IPv4 and not IPv6, there’s not much you can do except paying your ISP, or can you?
 
 ![captionless image](https://miro.medium.com/v2/resize:fit:948/format:webp/1*YlfLHvh_LteMcwiduBA80A.jpeg)
 
-How did I land here?
-====================
+# How did I land here?
 
 On my journey of reverse proxying, self-hosting media server, LLM etc., I had a need to be able to access my home server from anywhere, and I needed a way to break through CG-NAT in order to do that. CG-NAT in basic terms is you sharing a common public IPv4 address with your neighbors because those are rare to come by.
 
@@ -28,8 +26,7 @@ Now, since Cloudflare Tunnels are limiting you to only HTML based content by the
 
 Reverse SSH tunnel is exactly what it sounds: Instead of you ssh-ing into the machine to send commands, you can instead have the data be tunneled back to you over the security of the SSH protocol!
 
-The Procedure
-=============
+# The Procedure
 
 Now the clever amongst you would already know where this is going, but for those who don’t, here’s a basic overview:
 
@@ -61,8 +58,7 @@ ssh -N -g -R YOURPORT:LOCALIP:SERVERPORT
 
 This sets up a reverse tunnel that will forward YOURPORT to the SERVERPORT on the VM we just set up. And now you can access the website/app from the server’s public IP and port combo! If you took the time to setup an Apache reverse Proxy, now you can add records in Cloudflare or any other provider and have a live website hosted at home!
 
-The Automations
-===============
+# The Automations
 
 Since I am a lazy person who wants everything to auto-resume, here’s a quick PowerShell script I wrote that continuously picks up the ssh tunnel connection if it ever drops, you can set it to run on startup and voila, you have no hassles!
 
@@ -74,7 +70,7 @@ while($true) {
     ssh -N -g -R YOURPORT:LOCALIP:SERVERPORT
     echo "Connection Error"
     echo "Sleeping 10s"
-    ssh username@SERVERIP "sudo fuser -k PORT/tcp" 
+    ssh username@SERVERIP "sudo fuser -k PORT/tcp"
     # The PORT here should be a port you are using, this tackles an edge case
     # where the server keeps the tunnel open despite no connection
     Start-Sleep -Seconds 10

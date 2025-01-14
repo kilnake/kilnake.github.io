@@ -2,7 +2,8 @@
 title: Privacy/Spying stuff
 date: 2024-05-06 12:36 +500
 categories: [privacy, spying]
-tags: [privacy,spying]
+tags: [privacy, spying]
+image: /assets/thumbnails/typing.png
 ---
 
 ## You can be tracked on the way you type now... And there is a fix for that

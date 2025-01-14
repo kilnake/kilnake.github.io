@@ -3,6 +3,7 @@ title: IT Support
 date: 2024-12-12 11:28 +500
 categories: [IT]
 tags: [itsupport]
+image: /assets/thumbnails/technical-support.png
 ---
 
 # WHAT IS IT SUPPORT:

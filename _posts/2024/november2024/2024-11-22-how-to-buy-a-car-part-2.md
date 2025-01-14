@@ -3,6 +3,7 @@ title: How to Buy a used car PART 2
 date: 2024-11-22 13:28 +500
 categories: [car, usedcar]
 tags: [usedcar]
+image: /assets/thumbnails/car.png
 ---
 
 #### How not to get screwed when buying a used car.

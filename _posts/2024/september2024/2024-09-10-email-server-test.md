@@ -3,7 +3,7 @@ title: Email server Security test
 date: 2024-09-10 11:44 +500
 categories: [email, security]
 tags: [email, dmarc, dkim, spf, dnssec]
-image: /assets/thumbnails/email.png
+image: /thumbnails/email.png
 ---
 
 # Essential Security Tests for Your Email Server

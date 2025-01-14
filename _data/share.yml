@@ -16,7 +16,7 @@ platforms:
 
   - type: Whatsapp
     icon: "fab fa-whatsapp"
-    link: "whatsapp://send?title=TITLE&u=URL"
+    link: "https://api.whatsapp.com/send?text={{ page.url | absolute_url | uri_escape }}" target="_blank""
   - type: Telegram
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"

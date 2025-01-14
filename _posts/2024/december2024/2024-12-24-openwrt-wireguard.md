@@ -3,6 +3,7 @@ title: Openwrt Wireguard
 date: 2024-12-24 19:00 +500
 categories: [openwrt, wireguard]
 tags: [openwrt, wireguard]
+image: [openwrt.png](https://openwrt.org/_media/logo.png)
 ---
 
 # Finally a quick GUI guide to setup and configure wireguard on openwrt using luci only.

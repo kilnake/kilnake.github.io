@@ -3,7 +3,7 @@ title: FIDO2 Hardware Keys Implementation Strategy
 date: 2024-08-21 11:44 +500
 categories: [windows, hardwarekeys]
 tags: [windows, hardwarekeys, fido2]
-image: assets/thumbnails/authentication.png
+image: /assets/thumbnails/authentication.png
 ---
 
 # Rolling out FIDO2 Hardware keys in M365

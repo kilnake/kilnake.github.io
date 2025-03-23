@@ -205,3 +205,7 @@ This is based on old magnificient DBAN.
 ## Uniget UI
 
 <https://github.com/marticliment/UnigetUI>
+
+## XML auto-unattend
+
+<https://schneegans.de/windows/unattend-generator/>

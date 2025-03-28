@@ -5,6 +5,8 @@ categories: [virtualbox, proxmox]
 tags: [virtualbox, proxmox]
 ---
 
+# Virtualbox to Proxmox migrating.
+
 1. Convert .VDI to .IMG using VBoxManage
 
 2. Move Image to Proxmox-accessible location.

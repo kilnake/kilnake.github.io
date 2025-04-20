@@ -20,7 +20,7 @@ image: /assets/thumbnails/technical-support.png
 - On-site Support: Support provided at the customer's location.
   {: .prompt-tip }
 
-## IT Support Roles:
+## Roles:
 
 1. Help Desk Technician
 2. Desktop Support Technician
@@ -30,7 +30,7 @@ image: /assets/thumbnails/technical-support.png
 6. Technical Account Manager
 7. Field Technician
 
-## IT Support Responsibilities:
+## Responsibilities:
 
 1. Troubleshooting technical issues
 2. Resolving hardware and software problems
@@ -40,7 +40,7 @@ image: /assets/thumbnails/technical-support.png
 6. Monitoring system performance
 7. Collaborating with other IT teams
 
-## IT Support Skills:
+## Skills:
 
 1. Technical knowledge (operating systems, software, hardware)
 2. Problem-solving and analytical skills
@@ -50,7 +50,7 @@ image: /assets/thumbnails/technical-support.png
 6. Knowledge of IT service management frameworks (e.g., ITIL)
 7. Familiarity with industry-specific software and technologies
 
-## IT Support Tools:
+## Tools:
 
 1. Help desk software (e.g., ServiceNow, Zendesk)
 2. Remote desktop tools (e.g., TeamViewer, Remote Desktop)
@@ -60,7 +60,7 @@ image: /assets/thumbnails/technical-support.png
 6. Ticketing systems (e.g., JIRA, Freshservice)
 7. Virtual private network (VPN) tools
 
-## IT Support Best Practices:
+## Best Practices:
 
 1. Establish clear communication channels
 2. Set service level agreements (SLAs)
@@ -70,7 +70,7 @@ image: /assets/thumbnails/technical-support.png
 6. Monitor and analyze performance metrics
 7. Foster customer satisfaction and feedback
 
-## Challenges in IT Support:
+## Challenges:
 
 1. Keeping up with emerging technologies
 2. Managing increasing ticket volumes

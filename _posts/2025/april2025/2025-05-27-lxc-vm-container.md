@@ -23,4 +23,10 @@ For VM's your basically running a computer inside your computer. You get a full 
 
 While it is a container, its really meant to spin up the application part not really the OS part. Docker is a container platform similar to LXC, however LXC is meant to create basically a lightweight OS instead of an application itself. Where docker is really meant for the opposite, its meant to create an environment for an application to run on. Not for an OS to run inside of another OS. Docker is a solution to quick, easy deployment for APPLICATIONS. Not quick easy deployment for OS Virtualization, like LXC would be.
 
-> The fun part about computing is. Its whatever makes sense to your use case, there isnt always a clear cut answer its more pros and cons to each way to do things. {: .prompt-tip }
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+
+> The fun part about computing is. Its whatever makes sense to your use case, there isnt always a clear cut answer its more pros and cons to each way to do things.
+{: .prompt-tip }
+
+<!-- markdownlint-restore -->

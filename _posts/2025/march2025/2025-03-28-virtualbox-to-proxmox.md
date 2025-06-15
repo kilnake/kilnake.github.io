@@ -15,4 +15,4 @@ tags: [virtualbox, proxmox]
 6. set boot order, attach disk.
 7. done.
 
-Also, hindsite- you could just copy the .VDI directly to proxmox, and use qemu-img to go straight from .VDI to .qcow2
+Also, hindsight- you could just copy the .VDI directly to proxmox, and use qemu-img to go straight from .VDI to .qcow2

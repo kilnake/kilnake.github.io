@@ -3,7 +3,6 @@ title: Checklist if loved one passes away suddenly in India
 date: 2024-05-07 15:28 +500
 categories: [india, will, checklist]
 tags: [india, will]
-pin: true
 image: /assets/thumbnails/checklist.png
 ---
 

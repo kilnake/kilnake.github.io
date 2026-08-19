@@ -1,6 +1,6 @@
 ---
 title: Linux game streaming
-date: 2026-10-19 19:27 +500
+date: 2026-08-19 19:27 +500
 categories: [linux]
 tags: [linux,couch,stream,sunshine,lgtv,moonshine]
 ---

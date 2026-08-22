@@ -10,8 +10,6 @@ tags: [life]
 
 You can feel something deeply, and it still might not be true. Feelings aren't facts — they're information. They tell you something is happening, but they don't get the final word on what's real.
 
-Here are a few reminders worth sitting with.
-
 ## The Opposite of Anxiety Isn't Calm
 
 It's tolerance.
